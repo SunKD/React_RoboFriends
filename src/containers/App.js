@@ -5,6 +5,7 @@ import SearchBox from '../component/SearchBox';
 import Scroll from '../component/Scroll';
 import './App.css';
 import ErrorBoundry from '../component/ErrorBoundry';
+import Header from '../component/Header';
 
 import { setSearchField, requestRobots } from '../actions';
 
@@ -39,12 +40,12 @@ class App extends Component {
         } else {
             return (
                 <div className="tc">
-                    <h1 className='f1'>RoboFriends</h1>
+                    <Header />
                     <SearchBox searchChange={onSearchChange} />
                     <Scroll>
-                        {/* <ErrorBoundry> */}
+                        <ErrorBoundry>
                         <CardList robots={filteredRobots} />
-                        {/* </ErrorBoundry> */}
+                        </ErrorBoundry>
                     </Scroll>
                 </div>
             );
