@@ -1,5 +1,13 @@
+@font-face{
+  font-display: swap;
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: normal;
+  src: 'https://fonts.googleapis.com/css?family=Monoton';
+}
+
 h1 {
-    font-family: 'Monoton', cursive;;
+    font-family: 'Monoton', cursive;
     font-weight: 200;
     color: #0ccac4;
   }
